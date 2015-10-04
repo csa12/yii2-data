@@ -1,0 +1,23 @@
+{
+    "name": "csa12/yii2-data",
+    "type": "library",
+    "description": "Yii 2.0 database additions",
+    "keywords": ["yii2","gridview"],
+    "homepage": "https://github.com/csa12/yii2-data",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Marc Huizinga",
+            "email": "1333vr12@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+		"psr-4": {
+			"csa\\data\\": ""
+		}
+    }
+}
