@@ -1,7 +1,7 @@
 <?php
 /**
  * @copyright Copyright &copy; Marc Huizinga, CSA, 2015
- * @package yii2-static
+ * @package yii2-data
  * @version 0.0.1
  */
 
