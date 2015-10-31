@@ -28,19 +28,19 @@ to the require section of your composer.json.
 
 Usage
 -----
-To use this extension, simply add the following code at the beginning of views/layouts/main.php or any other view file where you would like to check your database connection or table existence.
+To use this extension, simply add the following code at the beginning of views/layouts/main.php or any other view file where you would like to check your database connection or table(s) existence.
 ```
 use csa\data\Database;
 
 <?php 
-	$tableName = 'name_of_database_table';//or NULL
-	$db = Database::checkDb($tableName);
+	$tableNames = ['name_of_database_table1', 'name_of_database_table2'];//or []
+	$db = Database::checkDb($tableNames);
 	$this->beginPage() ?>
 ...
 
 ```
 
-And if so desired you can disbale your content by adding  the following code around the <?= $content ?> within views/layouts/main.php
+And if so desired you can disable showing your content, when the database or table is not found, by adding  the following code around the <?= $content ?> within views/layouts/main.php
 ```
 ...
         <?php if ($db) { ?>
